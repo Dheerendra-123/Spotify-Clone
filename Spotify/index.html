@@ -1,0 +1,436 @@
+<html>
+    
+<head>
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <a href="#">
+                <img src="images/logo.png" alt="Logo" />
+            </a>
+        </div>
+        <div class="navigation">
+            <div class="part">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="fa fa-home"></span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="fa fa-search"></span>
+                        <span>Search</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="fa fas fa-book"></span>
+                        <span>Your Library</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="navigation">
+            <div class="part">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="fa fas fa-plus-square"></span>
+                        <span>Create Playlist</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="fa fas fa-heart"></span>
+                        <span>Liked Songs</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <br>
+        <div style="height: 210px;" class="part">
+            <br>
+        <div class="library">
+            <img src="images/library.png" alt="wrong path" height="25px" width="25px">
+            <h4 style="color: lightgray;width:100px;">Library</h4>
+            <img style="filter:invert(40%)" src="images/plus.png" alt="wrong path" height="17px" width="17px">
+            <img style="filter:invert(40%)" src="images/next.png" alt="wrong path" height="17px" width="17px">
+        </div>
+        <br>
+        <br>
+        <div class="create-playlist-box">
+            <h4 style="color: white;">Create your first play list</h4>
+            <br>
+            <h5 style="color: white;">It is easy we will help you</>
+        </div>
+        <div class="cpbutton">
+            <h5 style="color: black;">Create Playlist</h5>
+        </div>
+    </div>
+    </div>
+
+    <div class="main-box">
+        <div class="topbar">
+            <div class="prev-next-buttons">
+                <button type="button" class="fa fas fa-chevron-left" id="prev-button"></button>
+                <button type="button" class="fa fas fa-chevron-right" id="next-button"></button>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">Premium</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Download</a></li>
+                    <li class="divider">|</li>
+                    <li><a href="#" id="signup-btn">Sign Up</a></li>
+                    <li class="sign-log"><a style="color: black;" href="#" id="login-btn">Log In</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="spotify-playlists">
+            <div class="artists">
+                <h2 style="float: left;">Popular artists</h2>
+                <h5 style=" float:right;">Show all</h5>
+                <div style="height: 245px;" class="artists_box_list list">
+                   <div style="height: 200px;" class="item">
+                    <img style="border-radius: 50%;" src="images/pritam.PNG" alt="wrong path">
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                        <h4 style="font-size: 16px;">Pritam</h4>
+                        <h5>Artist</h5>
+                    </div>
+                   </div>
+                   <div style="height: 200px;"  class="item">
+                    <img style="border-radius: 50%; height:153px" src="images/arjiit.PNG" alt="wrong path">
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                        <h4 style="font-size: 16px;">Arjit Singh</h4>
+                        <h5>Artist</h5>
+                    </div>
+                   </div>
+                   <div style="height: 200px;"  class="item">
+                    <img style="border-radius: 50%; height: 153px;" src="images/rahman.PNG" alt="wrong path">
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                        <h4 style="font-size: 16px;">A.R. Rahman</h4>
+                        <h5>Artist</h5>
+                    </div>
+                   </div>
+                   <div style="height: 200px;"  class="item">
+                    <img style="border-radius: 50%;  height: 153px;" src="images/sachin.PNG" alt="wrong path">
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                        <h4 style="font-size: 16px;">Sachin-Jigar</h4>
+                        <h5>Artist</h5>
+                    </div>
+                   </div>
+                   <div style="height: 200px;"  class="item">
+                    <img style="border-radius: 50%; height: 153px;" src="images/vishalmishra.PNG" alt="wrong path">
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                        <h4 style="font-size: 16px;">Vishal Mishra</h4>
+                        <h5>Artist</h5>
+                    </div>
+                   </div>
+                   <div style="height: 200px;"  class="item">
+                    <img style="border-radius: 50%;height: 153px;" src="images/atifaslam.PNG" alt="wrong path">
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                        <h4 style="font-size: 16px;">Atif Aslam</h4>
+                        <h5>Artist</h5>
+                    </div>
+                   </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <h2 style="float:left;">Popular Albums</h2>
+            <h5 style="float:right">Show all</h5>
+            <div style="height:280px" class="songs-box list">
+                <div style="height:240px" class="item">
+                    <img  src="images/ektharaja.png" alt="Playlist Image" height="153px"/>
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                        <h4 style="font-size: 16px;">Ek Tha Raja</h4>
+                        <h5>Badshah</h5>
+                    </div>
+                </div>
+                <div style="height:240px" class="item">
+                    <img src="images/sajini.PNG" alt="Playlist Image" height="153px"/>
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                        <h4 style="font-size: 16px;">Sajini</h4>
+                         <h5>Ram Smaptah, Arjit Singh, Prashant...</h5>   
+                    </div>
+
+                </div>
+                <div style="height:240px" class="item">
+                    <img src="images/stillrolin.PNG" alt="Playlist Image" height="153px"/>
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                        <h4 style="font-size: 16px;">Still Rollin</h4>
+                         <h5>Shubh</h5>
+                    </div>
+                </div>
+                <div style="height:240px" class="item">
+                    <img src="images/asquie.PNG" alt="Playlist Image" height="153px"/>
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                        <h4 style="font-size: 16px;">Aashiqui 2</h4>
+                        <h5>Mithoon, Ankit Tiwari,Jeet Ganguli</h5> 
+                    </div>
+                </div> 
+                <div style="height:240px" class="item">
+                    <img src="images/animal.PNG" alt="Playlist Image" height="153px"/>
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                        <h4 style="font-size: 16px;">Animal</h4>
+                        <h5>Manan Bharadwaj, Vishal Mishra, Jaani</h5>
+                    </div>
+                </div>
+                <div style="height:240px" class="item">
+                    <img src="images/makingmemories.PNG" alt="Playlist Image" height="153px"/>
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                        <h4 style="font-size: 16px;">Making Memories</h4>
+                        <h5>Karan Aujla, Ikki</h5>
+                    </div>
+                </div>
+            </div>
+          
+            <h2 style="float:left;">Popular Radio</h2>
+            <h5 style="float:right">Show all</h5>
+            <div style="height:280px" class="songs-box list">
+                <div style="height:240px" class="item">
+                    <img  src="images/Capture1.PNG" alt="Playlist Image" height="153px"/>
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                        <h4 style="font-size: 16px;">Arjit Singh Radio</h4>
+                        <h1>With Neha Kakkar, Pritam, KK and...</h1>
+                    </div>
+                </div>
+                <div style="height:240px" class="item">
+                    <img src="images/Capture2.PNG" alt="Playlist Image" height="153px"/>
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                        <h4 style="font-size: 16px;">Ikka Radio</h4>
+                        <h5>With Karma, Raga, Mufhad and more...</h5>
+                    </div>
+
+                </div>
+                <div style="height:240px" class="item">
+                    <img src="images/Capture3.PNG" alt="Playlist Image" height="153px"/>
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                        <h4 style="font-size: 16px;">Udit Narayan...</h4>
+                       <h5>With Kumar Sanu, Alka Yagnik,...</h5>
+                    </div>
+                </div>
+                <div style="height:240px" class="item">
+                    <img src="images/Capture4.PNG" alt="Playlist Image" height="153px"/>
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                        <h4 style="font-size: 16px;">Shreya Ghosal...</h4>
+                        <h5>With Sonu Nigam, Sunidhi Chauhan,...</h5>
+                    </div>
+                </div> 
+                <div style="height:240px" class="item">
+                    <img src="images/Capture5.PNG" alt="Playlist Image" height="153px"/>
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                        <h4 style="font-size: 16px;">Diljit Dosanjh...</h4>
+                        <h5>With Gary Sandhu, Ranjit Pawa,..</h5>
+                    </div>
+                </div>
+                <div style="height:240px" class="item">
+                    <img src="images/Capture6.PNG" alt="Playlist Image" height="153px"/>
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                        <h4 style="font-size: 16px;">A.R. Rahman...</h4>
+                        <h5>With Shanka Mahadevan,...</h5>
+                    </div>
+                </div>
+            </div>
+
+            <h2 style="float:left;">Featured Charts</h2>
+            <h5 style="float:right">Show all</h5>
+            <div style="height:280px" class="songs-box list">
+                <div style="height:240px" class="item">
+                    <img  src="images/Capture8.PNG" alt="Playlist Image" height="153px"/>
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                        <h4 style="font-size: 16px;">Top Songs-...</h4>
+                        <h5>Your Weekly Update of the most played...</h5>
+                    </div>
+                </div>
+                <div style="height:240px" class="item">
+                    <img src="images/Capture9.PNG" alt="Playlist Image" height="153px"/>
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                        <h4 style="font-size: 16px;">Top Songs-USA</h4>
+                        <h5>Your Weekly Update of the most played...</h5>
+                    </div>
+
+                </div>
+                <div style="height:240px" class="item">
+                    <img src="images/Capture10.PNG" alt="Playlist Image" height="153px"/>
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                        <h4 style="font-size: 16px;">Top 50-GLobal</h4>
+                        <h5>Your Weekly Update of the most played...</h5>
+                       
+                    </div>
+                </div>
+                <div style="height:240px" class="item">
+                    <img src="images/Capture11.PNG" alt="Playlist Image" height="153px"/>
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                        <h4 style="font-size: 16px;">Top 50-USA</h4>
+                        <h5>Your Weekly Update of the most played...</h5>
+                    </div>
+                </div> 
+                <div style="height:240px" class="item">
+                    <img src="images/Capture12.PNG" alt="Playlist Image" height="153px"/>
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                        <h4 style="font-size: 16px;">Viral 50-Global</h4>
+                        <h5>Your Weekly Update of the most played...</h5>
+                    </div>
+                </div>
+        </div>
+
+        <h2 style="float:left;">Spotify Playlists</h2>
+        <h5 style="float:right">Show all</h5>
+        <div style="height:280px"  class="songs-box list">
+            <div style="height:240px" class="item">
+                <img  src="images/Capture14.PNG" alt="Playlist Image" height="153px"/>
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                    <h4 style="font-size: 16px;">Todays's Top Hits</h4>
+                    <h5>Karol G is on the top Hottest 50!</h5>
+                </div>
+            </div>
+            <div style="height:240px"class="item">
+                <img src="images/Capture15.PNG" alt="Playlist Image" height="153px"/>
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                    <h4 style="font-size: 16px;">RNB X</h4>
+                    <h5>Where R&B Lives.
+                        Cover:Tink
+                    </h5>
+                </div>
+
+            </div>
+            <div style="height:240px"  class="item">
+                <img src="images/Capture16.PNG" alt="Playlist Image" height="153px"/>
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                    <h4 style="font-size: 16px;">Rap Caviar</h4>
+                    <h5>New music from Eminem, Ice Spic...</h5>
+                </div>
+            </div>
+            <div style="height:240px" class="item">
+                <img src="images/Capture17.PNG" alt="Playlist Image" height="153px"/>
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                    <h4 style="font-size: 16px;">Peaceful Piano</h4>
+                    <h5>Peaceful Piano to help you slow...</h5>
+                </div>
+            </div> 
+            <div style="height:240px"  class="item">
+                <img src="images/Capture18.PNG" alt="Playlist Image" height="153px"/>
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                    <h4 style="font-size: 16px;">All out 2010s</h4>
+                    <h5>The biggest songs of the 2010s...</h5>
+                </div>
+            </div>
+            <div style="height:240px"  class="item">
+                <img src="images/Capture19.PNG" alt="Playlist Image" height="153px"/>
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                    <h4 style="font-size: 16px;">Mellow Lofi...</h4>
+                    <h5>Laid-back beats for easygoing...</h5>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-row">
+               <div class="col">
+                <ul>
+                    <li style="color:white;font-size:17px;">Company</li>
+                    <li><h5>About</h5></li>
+                    <li><h5>Jobs</h5></li>
+                    <li><h5>Records</h5></li>
+                </ul>
+               </div>
+               <div class="col">
+                <ul>
+                    <li style="color:white;font-size:17px;">Communities</li>
+                    <li><h5>For Artists</h5></li>
+                    <li><h5>Developers</h5></li>
+                    <li><h5>Advertising</h5></li>
+                    <li><h5>Investors</h5></li>
+                    <li><h5>Vendors</h5></li>
+                </ul>
+               </div>
+               <div class="col">
+                <ul>
+                    <li style="color:white;font-size:17px;">Useful links</li>
+                    <li><h5>Support</h5></li>
+                    <li><h5>Free Mobile App</h5></li>
+                </ul>
+               </div>
+               <div class="col">
+                <ul>
+                    <li style="color:white;font-size:17px;">Spotify Plans</li>
+                    <li><h5>Premium Individual</h5></li>
+                    <li><h5>Premium Duo</h5></li>
+                    <li><h5>Premium Family</h5></li>
+                    <li><h5>Premium Student</h5></li>
+                    <li><h5>Spotify Free</h5></li>
+                </ul>
+               </div>
+               <div class="col-social-links col">
+                <div class="icons">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="icons">
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+               </div>
+            </div>
+            <div class="hr">
+            </div>
+            <br>
+            <br>
+            <h5 style="font-weight: 500;">&copy; @2024 Spotify AB </h5>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="preview-box">
+    <div class="preview">
+        <div>
+            <h6>Preview of Spotify</h6>
+            <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+        </div>
+        <button><h4>Sign up free</h4></button>
+    </div>
+</div>
+   
+    </body>
+
+</html>
